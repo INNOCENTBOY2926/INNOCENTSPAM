@@ -5,17 +5,13 @@ from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10
 
 START_BUTTON = [
     [
-        Button.url(" 𝐌ᴜsɪᴄ ", "https://t.me/HINATA_N_BOT"),
-        Button.url("𝐎ᴡɴᴇʀ", "https://t.me/Saif_Dictator")
+        Button.url(" 𝐌ᴜsɪᴄ ", "https://t.me/RUHI_X_MUSICBOT"),
+        Button.url("𝐎ᴡɴᴇʀ", "https://t.me/its_innocent_boy_8202")
     ],
     [
-        Button.url(" 𝐂н𝙰𝙽𝙽𝙴𝙻 ", "https://t.me/SAIFALLBOT"),
-        Button.url(" 𝐒𝚄𝙿𝙿𝙾𝚃  ", "https://t.me/DEAD_GRPCHAT")
+        Button.url(" 𝐂н𝙰𝙽𝙽𝙴𝙻 ", "https://t.me/THE_FUCKING_BOT_2926"),
+        Button.url(" 𝐒𝚄𝙿𝙿𝙾𝚃  ", "https://t.me/THE_FUCKER_BOTS_2926")
     ],
-    [
-        Button.url("𝐑ᴇᴘᴏ ", "github.com/SAIFDEAD/AXSPAMBOT"),
-      
-    ]
 ]
 
 
@@ -35,14 +31,14 @@ async def start(event):
         AltBot = await event.client.get_me()
         bot_name = AltBot.first_name
         bot_id = AltBot.id
-        TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
-        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝐃ɪᴄᴛᴀᴛᴏʀ](https://t.me/Saif_Dictator)**\n\n"
+       TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n━━━━━━━━━━━━━━━━━━━\n\n"
+        TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝐃ɪᴄᴛᴀᴛᴏʀ Innocent](https://t.me/its_innocent_boy_8202)**\n\n"
         TEXT += f"» **ᴅᴇᴀᴅ ᴠᴇʀsɪᴏɴ :** `M3.3`\n"
         TEXT += f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `3.11.3`\n"
         TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
                     event.chat_id,
-                    "https://graph.org/file/eb514f6d4b35027f8fe0b.jpg",
+                    "https://graph.org/file/29a37106d6ae1b3025c4c.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
 )
