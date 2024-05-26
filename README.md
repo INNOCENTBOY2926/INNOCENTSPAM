@@ -1,21 +1,33 @@
-<h1 align="center"><b>𝗗𝗘𝗔𝗗 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧 </b></h1>
-
-<h4 align="center"> 𝐀 𝐏𝐎𝐖𝐄𝐑𝐅𝐔𝐋 𝐒𝐏𝐀𝐌𝐁𝐎𝐓𝐒</h4>
-
-<p align="center"><a href="https://t.me/Saif_Dictator"><img src="https://graph.org/file/eb514f6d4b35027f8fe0b.jpg" width="400"></a></p>
+# INNOCENTSPAMBOT
+THIS IS VERY POWERFUL SPAM BOT IF HAVE ANY PROBLEM THEN DM TO https://t.me/its_innocent_boy_8202
 
 
-> ⭐️ Thanks to everyone for using this op Dead spam bot. That is the greatest pleasure we have !
 
 
-# ᴅᴇᴘʟᴏʏᴍᴇɴᴛ
+[![GIF](https://github.com/nakuldkdhacker0026/MUSIC1/blob/main/nakuldkdhacker0026.gif)](https://github.com/nakuldkdhacker0026)
+   [![𝐌𝐑.𝐒𝐀𝐈𝐅(https://github-stats-alpha.vercel.app/api?username=SAIFDEAD "SAIFDEAD OP")](https://github-stats-alpha.vercel.app/api?username=nakuldkdhacker0026 "nakuldkdhacker0026")
 
 
+
+
+
+GO TO [RELOAD.PY](https://github.com/nakuldkdhacker0026/DAXXMUSIC/blob/Master/DAXXMUSIC/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
+
+<p align="center">
+  <img src="https://te.legra.ph/file/29a37106d6ae1b3025c4c.jpg">
+</p>
+
+<p align="center">
+<b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
+</p>
+
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 <details>
 <summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ</b></summary>
 <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/SAIFDEAD/AXSPAMBOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/nakuldkdhacker0026/INNOCENTSPAM)
 
 </details>
 
@@ -24,6 +36,5 @@
 <summary><b>sᴜᴘᴘᴏʀᴛ</b></summary>
 <br>
 
-<a href="https://t.me/SAIFHELPGC"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-
-</details>
+### Contact :
+<a href="https://t.me/its_innocent_boy_8202"><img title="Telegram" src="https://img.shields.io/badge/Telegram-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
