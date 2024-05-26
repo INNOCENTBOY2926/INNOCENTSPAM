@@ -27,11 +27,11 @@ async def echo(event):
             user_id = reply_msg.sender_id
 
             if user_id in ALTRON:
-                await event.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃  ")
+                await event.reply("APNE DADA PAR ECHO MAAREGA YAHI SANSKAR HAI TERE 💘✨ .  ")
             elif user_id == OWNER_ID:
-                await event.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
+                await event.reply("KYA BE APNE BAAP PAR ECHO MAAREGA. 🌿✨")
             elif user_id in SUDO_USERS:
-                await event.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
+                await event.reply("ISKO PAR ECHO MAAREGA JISNE TERI MAA KO CHODA. 💥⚡ .")
             else:
                 try:
                     alt = Get(base64.b64decode('QFRoZUFsdHJvbg=='))
@@ -42,10 +42,10 @@ async def echo(event):
                 global ECHO
                 check = f"{user_id}_{event.chat_id}"
                 if check in ECHO:
-                    await event.reply("» ᴄᴏᴘʏɪɴɢ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴏɴ ᴛʜɪꜱ ᴜꜱᴇʀ !!")
+                    await event.reply("» 𝓝𝓐𝓚𝓐𝓛𝓒𝓗𝓘 𝓑𝓐𝓝𝓓𝓐𝓡 𝓟𝓐𝓗𝓛𝓔 𝓢𝓔 𝓗𝓘 𝓒𝓗𝓐𝓛𝓤 𝓗𝓐𝓘 𝓜𝓐𝓢𝓣𝓔𝓡🤦‍♂️🤷‍♂️ !!")
                 else:
                     ECHO.append(check)
-                    await event.reply("» ᴄᴏᴘʏɪɴɢ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ ✅")
+                    await event.reply("» 𝓝𝓐𝓚𝓐𝓛𝓒𝓗𝓘 𝓑𝓐𝓝𝓓𝓐𝓡 𝓒𝓗𝓐𝓛𝓤 𝓗𝓞 𝓖𝓨𝓐 𝓜𝓐𝓢𝓣𝓔𝓡 ✅")
         else:
             await event.reply(f"𝗘𝗰𝗵𝗼:\n  » {hl}echo <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
@@ -75,9 +75,9 @@ async def rmecho(event):
 
             if check in ECHO:
                 ECHO.remove(check)
-                await event.reply("» ᴄᴏᴘʏɪɴɢ ʜᴀꜱ ʙᴇᴇɴ ꜱᴛᴏᴘᴘᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴜꜱᴇʀ !! ☑️")
+                await event.reply("» 𝓝𝓐𝓚𝓐𝓛𝓒𝓗𝓘 𝓑𝓐𝓝𝓓𝓐𝓡 𝓟𝓐𝓗𝓛𝓔 𝓢𝓔 𝓗𝓘 𝓑𝓐𝓝𝓓 𝓗𝓐𝓘 𝓜𝓐𝓢𝓣𝓔𝓡🤦‍♂️🤷‍♂️ !! ☑️")
             else:
-                await event.reply("» ᴄᴏᴘʏɪɴɢ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴅɪꜱᴀʙʟᴇᴅ !!")
+                await event.reply("» 𝓝𝓐𝓚𝓐𝓛𝓒𝓗𝓘 𝓑𝓐𝓝𝓓𝓐𝓡 𝓑𝓐𝓝𝓓 𝓗𝓞 𝓖𝓨𝓐 𝓜𝓐𝓢𝓣𝓔𝓡 ✅  !!")
         else:
             await event.reply(f"𝗥𝗲𝗺𝗼𝘃𝗲 𝗘𝗰𝗵𝗼:\n  » {hl}rmecho <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
 
