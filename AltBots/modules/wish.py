@@ -35,7 +35,7 @@ async def gm(e):
                 reply = choice(GM)
                 caption = f"{username} {reply}"
                 await e.client.send_message(e.chat_id, caption)
-                await asyncio.sleep(0.1)
+                await asyncio.sleep(0.001)
         except (IndexError, ValueError, NameError):
             await e.reply(f"{hl}ɢᴍ <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
@@ -72,7 +72,7 @@ async def ga(e):
                 reply = choice(GA)
                 caption = f"{username} {reply}"
                 await e.client.send_message(e.chat_id, caption)
-                await asyncio.sleep(0.1)
+                await asyncio.sleep(0.001)
         except (IndexError, ValueError, NameError):
             await e.reply(f"{hl}ɢᴀ <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
@@ -109,7 +109,7 @@ async def gn(e):
                 reply = choice(GN)
                 caption = f"{username} {reply}"
                 await e.client.send_message(e.chat_id, caption)
-                await asyncio.sleep(0.1)
+                await asyncio.sleep(0.001)
         except (IndexError, ValueError, NameError):
             await e.reply(f"{hl}ɢɴ <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
