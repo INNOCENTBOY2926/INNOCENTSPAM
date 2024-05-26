@@ -35,11 +35,11 @@ async def raid(e):
 
         try:
             if uid in ALTRON:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
+                await e.reply("APNE DADA KO GALI DEGA YAHI SANSKAR HAI TERE 💘✨ .")
             elif uid == OWNER_ID:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 ")
+                await e.reply("KYA BE APNE BAAP KO GALI DEGA. 🌿✨ ")
             elif uid in SUDO_USERS:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
+                await e.reply("ISKO GALI DEGA JISNE TERI MAA KO CHODA. 💥⚡. .")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
@@ -48,7 +48,7 @@ async def raid(e):
                     reply = choice(RAID)
                     caption = f"{username} {reply}"
                     await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.1)
+                    await asyncio.sleep(0.001)
         except (IndexError, ValueError, NameError):
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐑𝐚𝐢𝐝\n  » {hl}raid <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}raid <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
@@ -100,11 +100,11 @@ async def rraid(e):
         try:
             user_id = entity.id
             if user_id in ALTRON:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 ")
+                await e.reply("APNE DADA KO GALI DEGA YAHI SANSKAR HAI TERE 💘✨ ")
             elif user_id == OWNER_ID:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
+                await e.reply("KYA BE APNE BAAP KO GALI DEGA. 🌿✨ .")
             elif user_id in SUDO_USERS:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
+                await e.reply("ISKO GALI DEGA JISNE TERI MAA KO CHODA. 💥⚡. .")
             else:
                 global REPLY_RAID
                 check = f"{user_id}_{e.chat_id}"
@@ -176,7 +176,7 @@ async def mraid(e):
                 reply = choice(MRAID)
                 caption = f"{username} {reply}"
                 await e.client.send_message(e.chat_id, caption)
-                await asyncio.sleep(0.1)
+                await asyncio.sleep(0.001)
         except (IndexError, ValueError, NameError):
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗠𝗥𝗮𝗶𝗱\n  » {hl}mraid <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}mraid <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
@@ -214,7 +214,7 @@ async def sraid(e):
                 reply = choice(SRAID)
                 caption = f"{username} {reply}"
                 await e.client.send_message(e.chat_id, caption)
-                await asyncio.sleep(0.1)
+                await asyncio.sleep(0.001)
         except (IndexError, ValueError, NameError):
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗦𝗥𝗮𝗶𝗱\n  » {hl}sraid <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}sraid <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
@@ -246,11 +246,11 @@ async def craid(e):
 
         try:
             if uid in ALTRON:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 💘✨ ")
+                await e.reply("APNE DADA KO GALI DEGA YAHI SANSKAR HAI TERE 💘✨ ")
             elif uid == OWNER_ID:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙾𝚆𝙽𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 🌿✨")
+                await e.reply("KYA BE APNE BAAP KO GALI DEGA. 🌿✨")
             elif uid in SUDO_USERS:
-                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 💥⚡.")
+                await e.reply("ISKO GALI DEGA JISNE TERI MAA KO CHODA. 💥⚡.")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
@@ -259,7 +259,7 @@ async def craid(e):
                     reply = choice(CRAID)
                     caption = f"{username} {reply}"
                     await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.1)
+                    await asyncio.sleep(0.001)
         except (IndexError, ValueError, NameError):
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐂𝗥𝗮𝗶𝗱\n  » {hl}raid <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}raid <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
