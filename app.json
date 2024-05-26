@@ -1,6 +1,6 @@
 {
-    "name": "⚡🇩𝜩Ⓐ︎🇩 ⚡.",
-    "logo": "https://graph.org/file/eb514f6d4b35027f8fe0b.jpg",
+    "name": "👑😈INNOCENT SPAM😈👑.",
+    "logo": "https://graph.org/file/29a37106d6ae1b3025c4c.jpg",
     "keywords": [
         "telegram",
         "telethon",
@@ -8,7 +8,7 @@
         "PythonX",
         "SpamBots"
     ],
-    "repository": "https://github.com/SAIFDEAD/AXSPAMBOT",
+    "repository": "https://github.com/nakuldkdhacker0026/INNOCENTSPAM",
     "env": {
       "BOT_TOKEN": {
         "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
@@ -67,12 +67,12 @@
       },
       "SUDO_USERS": {
         "description": "Sudo users id space by space",
-        "value": "7117906157",
+        "value": "6819558758",
         "required": false
       },
       "OWNER_ID": {
         "description": "Owner Id",
-        "value": "7117906157",
+        "value": "6961211249",
         "required": true
       },
       "HEROKU_API_KEY": {
