@@ -35,7 +35,7 @@ async def emoji(e):
                 reply = choice(SAIF)
                 caption = f"{username} {reply}"
                 await e.client.send_message(e.chat_id, caption)
-                await asyncio.sleep(0.1)
+                await asyncio.sleep(0.001)
         except (IndexError, ValueError, NameError):
             await e.reply(f"{hl}ᴇᴍᴏᴊɪ <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as e:
