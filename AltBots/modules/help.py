@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"𝗗𝗘𝗔𝗗 𝗫 𝗦𝗣𝗔𝗠 𝗛𝗘𝗟𝗣 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀: @SAIF_DICTATOR**"
+HELP_STRING = f"🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀: @its_innocent_boy_8202**"
 
 HELP_BUTTON = [
     [
@@ -12,14 +12,14 @@ HELP_BUTTON = [
     ],
     [
       Button.inline(" 𝐄xᴛʀᴀ ", data="extra"),
-      Button.url("𝐎𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
+      Button.url("𝐎𝚆𝙽𝙴𝚁 ", "https://t.me/its_innocent_boy_8202")
     ],
     [
-      Button.url(" 𝐂ʜᴀɴɴᴇʟ ", "https://t.me/DEAD_GRPCHAT"),
-      Button.url("𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFALLBOT")
+      Button.url(" 𝐂ʜᴀɴɴᴇʟ ", "https://t.me/THE_FUCKING_BOT_2926"),
+      Button.url("𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/THE_FUCKER_BOTS_2926")
     ],
     [ 
-      Button.inline(" 𝐃ᴇᴀᴅ 𝐗 𝐒ᴘᴀᴍ", data="deadxspam")
+      Button.inline(" 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ", data="deadxspam")
     ]
   ]
 
@@ -38,7 +38,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://graph.org/file/eb514f6d4b35027f8fe0b.jpg",
+              "https://graph.org/file/29a37106d6ae1b3025c4c.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -49,7 +49,7 @@ async def help(event):
 extra_msg = f"""
 **» ᴇxᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅꜱ:**
 
-𝗨𝘀𝗲𝗿𝗕𝗼𝘁: **ᴅᴇᴀᴅ sᴘᴀᴍ ʙᴏᴛ ᴄᴍᴅꜱ**
+𝗨𝘀𝗲𝗿𝗕𝗼𝘁: **🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ ʙᴏᴛ ᴄᴍᴅꜱ**
   1) {hl}ping 
   2) {hl}stop
   3) {hl}sudo <reply to user>  --> Owner Cmd
@@ -65,7 +65,7 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**𝗗𝗘𝗔𝗗 𝗫 𝗦𝗣𝗔𝗠  **
+**🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ  **
 """
 
 
@@ -99,7 +99,7 @@ deadxspam_msg = f"""
 𝗢𝗻𝗲𝘄𝗼𝗿𝗱𝗚𝗮𝗹𝗶: **ᴏɴᴇ ᴡᴏʀᴅ ɢᴀʟɪ ᴛᴏ ɢᴀɴᴅᴜ ᴜsᴇʀ**
   1) {hl}gali <count> <reply to user>
 
-**𝗗𝗘𝗔𝗗 𝗫 𝗦𝗣𝗔𝗠**
+**🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ**
 """
                  
 raid_msg = f"""
@@ -130,7 +130,7 @@ raid_msg = f"""
   2) {hl}craid <count> <reply to user>
 
 
-**𝗗𝗘𝗔𝗗 𝗫 𝗦𝗣𝗔𝗠**
+**🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ**
 """
 
 spam_msg = f"""
@@ -147,7 +147,7 @@ spam_msg = f"""
   1) {hl}hang <counter>
 
 
-**𝗗𝗘𝗔𝗗 𝗫 𝗦𝗣𝗔𝗠**
+**🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ**
 """                     
            
            
@@ -172,19 +172,19 @@ async def helpback(event):
               ],
               [
                 Button.inline(" 𝗘xᴛʀᴀ ", data="extra"),
-                Button.url(" 𝗢𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
+                Button.url(" 𝗢𝚆𝙽𝙴𝚁 ", "https://t.me/its_innocent_boy_8202")
               ],
               [          
-                Button.url("𝗖ʜᴀɴɴᴇʟ ", "https://t.me/DEAD_GRPCHAT"),
-                Button.url("𝗦ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFALLBOT")
+                Button.url("𝗖ʜᴀɴɴᴇʟ ", "https://t.me/THE_FUCKING_BOT_2926"),
+                Button.url("𝗦ᴜᴘᴘᴏʀᴛ ", "https://t.me/THE_FUCKER_BOTS_2926")
             ],
             [
-                Button.inline(" 𝐃ᴇᴀᴅ 𝐗 𝐒ᴘᴀᴍ", data="deadxspam")
+                Button.inline(" 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ", data="deadxspam")
             ],
            ]
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ  ʙᴏᴛs !! @its_innocent_boy_8202", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -203,7 +203,7 @@ async def help_spam(event):
             buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
        ) 
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ  ʙᴏᴛs !! @its_innocent_boy_8202", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -222,7 +222,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ  ʙᴏᴛs !! @its_innocent_boy_8202", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -241,7 +241,7 @@ async def help_extra(event):
             buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
             )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @its_innocent_boy_8202", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"deadxspam"))
@@ -260,5 +260,5 @@ async def help_deadxspam(event):
             buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
        ) 
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ  ʙᴏᴛs !! @its_innocent_boy_8202", cache_time=0, alert=True)
 
