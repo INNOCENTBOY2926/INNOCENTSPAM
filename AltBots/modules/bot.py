@@ -114,6 +114,7 @@ async def addsudo(event):
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
+                SUDO_USERS.append(target)
             await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `🤦🏻‍♂️🙆🏻‍♂️𝒘𝒂𝒊𝒕 𝒌𝒂𝒓 𝒃𝒉𝒂𝒊 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 𝒔𝒖𝒓𝒖 𝒉𝒐 𝒓𝒂𝒉𝒂 𝒉𝒂𝒊...`")
             heroku_var["SUDO_USERS"] = newsudo    
     
@@ -145,6 +146,7 @@ async def rmsudo(event):
             await ok.edit("ᴜsᴇʀ ɪs ɴᴏᴛ ɪɴ ᴛʜᴇ sᴜᴅᴏ ʟɪsᴛ.")
         else:
             new_sudo_users = " ".join([user for user in sudousers.split() if user != str(target)])
+            SUDO_USERS.remove(target)
             await ok.edit(f"ʙᴇᴡᴀғᴀ sᴜᴅᴏ ᴜsᴇʀ: `{target}`")
             heroku_var["SUDO_USERS"] = new_sudo_users
     else:
