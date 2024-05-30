@@ -1,5 +1,5 @@
 import sys
-import render
+import heroku3
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, CMD_HNDLR as hl
 
@@ -96,19 +96,19 @@ async def stop(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
 async def addsudo(event):
     if event.sender_id == OWNER_ID:
-        Render = render.from_key(RENDER_API_KEY)
+        Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
         ok = await event.reply(f"» __A҉D҉D҉I҉N҉G҉ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 sᴜᴅᴏ....__")
         target = ""
         if event is None:
             return
-        if RENDER_APP_NAME is not None:
-            app = Render.app(RENDER_APP_NAME)
+        if HEROKU_APP_NAME is not None:
+            app = Heroku.app(HEROKU_APP_NAME)
         else:
             await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
             return
-        render_var = app.config()
+        heroku_var = app.config()
         if event is None:
             return
         try:
@@ -143,18 +143,18 @@ async def addsudo(event):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
 async def rmsudo(event):
     if event.sender_id == OWNER_ID:
-        Render = render.from_key(RENDER_API_KEY)
+        Heroku = render.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
         ok = await event.reply(f"𝗡𝗜𝗞𝗔𝗟 𝗗𝗜𝗬𝗔 𝗠𝗔𝗗𝗥𝗖𝗛𝗢𝗗 𝗞𝗢...")
         target = ""
         if event is None:
             return
-        if RENDER_APP_NAME is not None:
-            app = Render.app(RENDER_APP_NAME)
+        if HEROKU_APP_NAME is not None:
+            app = Heroku.app(HEROKU_APP_NAME)
         else:
             await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
             return
-        render_var = app.config()
+        heroku_var = app.config()
         if event is None:
             return
         try:
