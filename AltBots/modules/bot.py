@@ -101,12 +101,6 @@ async def addsudo(event):
 
         ok = await event.reply(f"» __A҉D҉D҉I҉N҉G҉ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 sᴜᴅᴏ....__")
         target = ""
-        if HEROKU_APP_NAME is not None:
-            app = render.app(HEROKU_APP_NAME)
-        else:
-            await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
-            return
-        heroku_var = app.config()
         if event is None:
             return
         try:
@@ -145,12 +139,6 @@ async def rmsudo(event):
         sudousers = getenv("SUDO_USERS", default=None)
         ok = await event.reply(f"𝗡𝗜𝗞𝗔𝗟 𝗗𝗜𝗬𝗔 𝗠𝗔𝗗𝗥𝗖𝗛𝗢𝗗 𝗞𝗢...")
         target = ""
-        if HEROKU_APP_NAME is not None:
-            app = Heroku.app(HEROKU_APP_NAME)
-        else:
-            await ok.edit("`[HEROKU]:\nPlease set up your HEROKU_APP_NAME`")
-            return
-        heroku_var = app.config()
         if event is None:
             return
         try:
