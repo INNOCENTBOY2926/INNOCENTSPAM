@@ -88,7 +88,7 @@
     },
   "buildpacks": [
         {
-            "url": "render/python"
+            "url": "heroku/python"
         }
     ]
       }
