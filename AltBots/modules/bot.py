@@ -1,5 +1,5 @@
 import sys
-import heroku3
+import render
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, CMD_HNDLR as hl
 
@@ -96,7 +96,7 @@ async def stop(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
 async def addsudo(event):
     if event.sender_id == OWNER_ID:
-        Heroku = heroku3.from_key(HEROKU_API_KEY)
+        Heroku = render.from_key(RENDER_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
         ok = await event.reply(f"» __A҉D҉D҉I҉N҉G҉ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 sᴜᴅᴏ....__")
@@ -104,7 +104,7 @@ async def addsudo(event):
         if event is None:
             return
         if HEROKU_APP_NAME is not None:
-            app = Heroku.app(HEROKU_APP_NAME)
+            app = render.app(RENDER_APP_NAME)
         else:
             await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
             return
