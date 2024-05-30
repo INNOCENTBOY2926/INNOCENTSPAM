@@ -103,7 +103,18 @@ async def addsudo(event):
         target = ""
         if event is None:
             return
+        if HEROKU_APP_NAME is not None:
+            app = Heroku.app(HEROKU_APP_NAME)
         else:
+            await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
+            return
+        heroku_var = app.config()
+        if event is None:
+            return
+        try:
+            reply_msg = await event.get_reply_message()
+            target = reply_msg.sender_id
+        except:
             await ok.edit("» ᴛᴀɢ ᴋᴀʀ ᴋᴇ ᴋᴀʀ !!")
             return
 
@@ -114,7 +125,6 @@ async def addsudo(event):
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-                SUDO_USERS.append(target)
             await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `🤦🏻‍♂️🙆🏻‍♂️𝒘𝒂𝒊𝒕 𝒌𝒂𝒓 𝒃𝒉𝒂𝒊 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 𝒔𝒖𝒓𝒖 𝒉𝒐 𝒓𝒂𝒉𝒂 𝒉𝒂𝒊...`")
             heroku_var["SUDO_USERS"] = newsudo    
     
@@ -139,7 +149,18 @@ async def rmsudo(event):
         target = ""
         if event is None:
             return
+        if HEROKU_APP_NAME is not None:
+            app = Heroku.app(HEROKU_APP_NAME)
         else:
+            await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
+            return
+        heroku_var = app.config()
+        if event is None:
+            return
+        try:
+            reply_msg = await event.get_reply_message()
+            target = reply_msg.sender_id
+        except:
             await ok.edit("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴛʜᴇ ᴜsᴇʀ.")
             return
         if str(target) not in sudousers:
