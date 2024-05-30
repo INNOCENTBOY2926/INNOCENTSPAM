@@ -1,4 +1,3 @@
 telethon
 cryptg
-render
-urllib3
+heroku3
