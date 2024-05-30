@@ -103,10 +103,7 @@ async def addsudo(event):
         target = ""
         if event is None:
             return
-        try:
-            reply_msg = await event.get_reply_message()
-            target = reply_msg.sender_id
-        except:
+        else:
             await ok.edit("» ᴛᴀɢ ᴋᴀʀ ᴋᴇ ᴋᴀʀ !!")
             return
 
@@ -141,10 +138,7 @@ async def rmsudo(event):
         target = ""
         if event is None:
             return
-        try:
-            reply_msg = await event.get_reply_message()
-            target = reply_msg.sender_id
-        except:
+        else:
             await ok.edit("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴛʜᴇ ᴜsᴇʀ.")
             return
         if str(target) not in sudousers:
