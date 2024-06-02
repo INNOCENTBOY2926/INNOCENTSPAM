@@ -4,14 +4,14 @@ THIS IS VERY POWERFUL SPAM BOT IF HAVE ANY PROBLEM THEN DM TO https://t.me/its_i
 
 
 
-[![GIF](https://github.com/nakuldkdhacker0026/MUSIC1/blob/main/nakuldkdhacker0026.gif)](https://github.com/nakuldkdhacker0026)
-   [![𝐌𝐑.𝐒𝐀𝐈𝐅(https://github-stats-alpha.vercel.app/api?username=SAIFDEAD "SAIFDEAD OP")](https://github-stats-alpha.vercel.app/api?username=nakuldkdhacker0026 "nakuldkdhacker0026")
+[![GIF](https://github.com/INNOCENTBOY2926/MUSIC1/blob/main/INNOCENTBOY2926.gif)](https://github.com/INNOCENTBOY2926)
+   [![𝐌𝐑.INNOCENT(https://github-stats-alpha.vercel.app/api?username=INNOCENTBOY2926 "INNOCENTBOY OP")](https://github-stats-alpha.vercel.app/api?username=INNOCENTBOY2926 "INNOCENTBOY2926")
 
 
 
 
 
-GO TO [RELOAD.PY](https://github.com/nakuldkdhacker0026/DAXXMUSIC/blob/Master/DAXXMUSIC/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
+GO TO [RELOAD.PY](https://github.com/INNOCENTBOY2926/DAXXMUSIC/blob/Master/DAXXMUSIC/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
 
 <p align="center">
   <img src="https://te.legra.ph/file/29a37106d6ae1b3025c4c.jpg">
@@ -27,7 +27,7 @@ GO TO [RELOAD.PY](https://github.com/nakuldkdhacker0026/DAXXMUSIC/blob/Master/DA
 <summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ</b></summary>
 <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/nakuldkdhacker0026/INNOCENTSPAM)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/INNOCENTBOY2926/INNOCENTSPAM)
 
 </details>
 
