@@ -96,19 +96,11 @@ async def stop(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
 async def addsudo(event):
     if event.sender_id == OWNER_ID:
-        Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
-
+        
         ok = await event.reply(f"» __A҉D҉D҉I҉N҉G҉ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 sᴜᴅᴏ....__")
         target = ""
-        if event is None:
-            return
-        if HEROKU_APP_NAME is not None:
-            app = Heroku.app(HEROKU_APP_NAME)
-        else:
-            await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
-            return
-        heroku_var = app.config()
+        uid = str(target)
         if event is None:
             return
         try:
@@ -126,7 +118,7 @@ async def addsudo(event):
             else:
                 newsudo = f"{target}"
             await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `🤦🏻‍♂️🙆🏻‍♂️𝒘𝒂𝒊𝒕 𝒌𝒂𝒓 𝒃𝒉𝒂𝒊 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 𝒔𝒖𝒓𝒖 𝒉𝒐 𝒓𝒂𝒉𝒂 𝒉𝒂𝒊...`")
-            heroku_var["SUDO_USERS"] = newsudo    
+            sudousers.append(uid)   
     
     elif event.sender_id in SUDO_USERS:
         await event.reply("» 𝗔ʋκααт Μαι Янσ βɛωακʋғ")
@@ -143,18 +135,10 @@ async def addsudo(event):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
 async def rmsudo(event):
     if event.sender_id == OWNER_ID:
-        Heroku = render.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
         ok = await event.reply(f"𝗡𝗜𝗞𝗔𝗟 𝗗𝗜𝗬𝗔 𝗠𝗔𝗗𝗥𝗖𝗛𝗢𝗗 𝗞𝗢...")
         target = ""
-        if event is None:
-            return
-        if HEROKU_APP_NAME is not None:
-            app = Heroku.app(HEROKU_APP_NAME)
-        else:
-            await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
-            return
-        heroku_var = app.config()
+        uid = str(target)
         if event is None:
             return
         try:
@@ -169,7 +153,7 @@ async def rmsudo(event):
             new_sudo_users = " ".join([user for user in sudousers.split() if user != str(target)])
             SUDO_USERS.remove(target)
             await ok.edit(f"ʙᴇᴡᴀғᴀ sᴜᴅᴏ ᴜsᴇʀ: `{target}`")
-            heroku_var["SUDO_USERS"] = new_sudo_users
+            
     else:
         await event.reply("𝗢𝗡𝗟𝗬 𝗢𝗪𝗡𝗘𝗥 𝗖𝗔𝗡 𝗥𝗘𝗠𝗢𝗩𝗘 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥𝗦.")
 
