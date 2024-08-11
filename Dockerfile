@@ -6,9 +6,9 @@ RUN apt-get install pip
 RUN mkdir /app/
 WORKDIR /app/
 COPY . /app/
-RUN /bin/sh -c pip install telethon
-RUN /bin/sh -c pip install cryptg
-RUN /bin/sh -c pip install heroku3
+RUN pip install telethon
+RUN pip install cryptg
+RUN pip install heroku3
 RUN pip3 install requirements.txt
 CMD python3 main.py
 
