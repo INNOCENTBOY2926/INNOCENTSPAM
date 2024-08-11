@@ -109,8 +109,9 @@ async def addsudo(event):
             await ok.edit("» ᴛᴀɢ ᴋᴀʀ ᴋᴇ ᴋᴀʀ !!")
             return
 
-        if str(target) in SUDO_USERS:
+        if (target in sudousers):
             await ok.edit(f"▄︻┻ 𝙏𝙃𝙄𝙎 𝙐𝙎𝙀𝙍 𝙄𝙎 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝘼 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 ︻┳═─- !!")
+            pass
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
@@ -145,7 +146,7 @@ async def rmsudo(event):
         except:
             await ok.edit("ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴛʜᴇ ᴜsᴇʀ.")
             return
-        if str(target) not in SUDO_USERS:
+        if (target not in sudousers):
             await ok.edit("ᴜsᴇʀ ɪs ɴᴏᴛ ɪɴ ᴛʜᴇ sᴜᴅᴏ ʟɪsᴛ.")
         else:
             if len(sudousers) > 0:
