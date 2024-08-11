@@ -148,10 +148,8 @@ async def rmsudo(event):
         if str(target) not in sudousers:
             await ok.edit("ᴜsᴇʀ ɪs ɴᴏᴛ ɪɴ ᴛʜᴇ sᴜᴅᴏ ʟɪsᴛ.")
         else:
-            new_sudo_users = " ".join([user for user in sudousers.split() if user != str(target)])
-            SUDO_USERS.remove(target)
             await ok.edit(f"ʙᴇᴡᴀғᴀ sᴜᴅᴏ ᴜsᴇʀ: `{target}`")
-            
+            SUDO_USERS.remove(target)
     else:
         await event.reply("𝗢𝗡𝗟𝗬 𝗢𝗪𝗡𝗘𝗥 𝗖𝗔𝗡 𝗥𝗘𝗠𝗢𝗩𝗘 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥𝗦.")
 
