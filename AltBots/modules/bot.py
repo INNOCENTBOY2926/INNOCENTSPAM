@@ -100,7 +100,6 @@ async def addsudo(event):
         
         ok = await event.reply(f"» __A҉D҉D҉I҉N҉G҉ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 sᴜᴅᴏ....__")
         target = ""
-        uid = str(target)
         if event is None:
             return
         try:
@@ -118,7 +117,7 @@ async def addsudo(event):
             else:
                 newsudo = f"{target}"
             await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `🤦🏻‍♂️🙆🏻‍♂️𝒘𝒂𝒊𝒕 𝒌𝒂𝒓 𝒃𝒉𝒂𝒊 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 𝒔𝒖𝒓𝒖 𝒉𝒐 𝒓𝒂𝒉𝒂 𝒉𝒂𝒊...`")
-            sudousers.append(uid)   
+            sudousers.append(target)   
     
     elif event.sender_id in SUDO_USERS:
         await event.reply("» 𝗔ʋκααт Μαι Янσ βɛωακʋғ")
@@ -138,7 +137,6 @@ async def rmsudo(event):
         sudousers = getenv("SUDO_USERS", default=None)
         ok = await event.reply(f"𝗡𝗜𝗞𝗔𝗟 𝗗𝗜𝗬𝗔 𝗠𝗔𝗗𝗥𝗖𝗛𝗢𝗗 𝗞𝗢...")
         target = ""
-        uid = str(target)
         if event is None:
             return
         try:
