@@ -6,7 +6,7 @@ RUN mkdir /app/
 WORKDIR /app/
 COPY . /app/
 RUN /bin/sh -c pip install telethon
-RUN pip install cryptg
-RUN pip install heroku3
+RUN /bin/sh -c pip install cryptg
+RUN /bin/sh -c pip install heroku3
 CMD python3 main.py
 
