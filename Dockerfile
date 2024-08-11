@@ -13,7 +13,6 @@ RUN apt-get update \
 COPY . /app/
 WORKDIR /app/
 
-RUN apt-get install pip
 RUN mkdir /app/
 WORKDIR /app/
 COPY . /app/
