@@ -96,9 +96,10 @@ async def stop(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
 async def addsudo(event):
     if event.sender_id == OWNER_ID:
+        Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
-        
-        ok = await event.reply(f"» __A҉D҉D҉I҉N҉G҉ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 sᴜᴅᴏ....__")
+
+        ok = await event.reply(f"» A҉D҉D҉I҉N҉G҉ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 ꭙ 𝕊ℙ𝔸𝕄 乃ⓞ𝐓 乃ⓞ𝐓 sᴜᴅᴏ.... ")
         target = ""
         if HEROKU_APP_NAME is innocentspam:
             app = "innocentspam"
@@ -115,20 +116,18 @@ async def addsudo(event):
             await ok.edit("» ᴛᴀɢ ᴋᴀʀ ᴋᴇ ᴋᴀʀ !!")
             return
 
-        if (str(target) in sudousers):
-            
-            await ok.edit(f"▄︻┻ 𝙏𝙃𝙄𝙎 𝙐𝙎𝙀𝙍 𝙄𝙎 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝘼 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 ︻┳═─- !!")
-            pass
+        if str(target) in sudousers:
+            await ok.edit(f"▄︻┻ 𝙏𝙃𝙄𝙎 𝙐𝙎𝙀𝙍 𝙄𝙎 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝘼 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 ꭙ 𝕊ℙ𝔸𝕄 乃ⓞ𝐓 𝐒𝐔𝐃𝐎 𝐔𝐒𝐄𝐑 ︻┳═─ !!")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `🤦🏻‍♂️🙆🏻‍♂️𝒘𝒂𝒊𝒕 𝒌𝒂𝒓 𝒃𝒉𝒂𝒊 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 𝒔𝒖𝒓𝒖 𝒉𝒐 𝒓𝒂𝒉𝒂 𝒉𝒂𝒊...`")   
-            SUDO_USERS.append(newsudo)
-    
+            await ok.edit(f"» **ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ**: `{target}`\n» `🤦🏻‍♂️🙆🏻‍♂️𝒘𝒂𝒊𝒕 𝒌𝒂𝒓 𝒃𝒉𝒂𝒊 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 ꭙ 𝕊ℙ𝔸𝕄 乃ⓞ𝐓 𝒔𝒖𝒓𝒖 𝒉𝒐 𝒓𝒂𝒉𝒂 𝒉𝒂𝒊...`")
+            heroku_var["SUDO_USERS"] = newsudo    
+
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» 𝗔ʋκααт Μαι Янσ βɛωακʋғ")
+        await event.reply("» TUMHARI MA KA JO HO DEKHA JAYE SUDO TO NAHI DENA ...")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$)(.*)" % hl))
