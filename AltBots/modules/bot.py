@@ -100,6 +100,12 @@ async def addsudo(event):
         
         ok = await event.reply(f"» __A҉D҉D҉I҉N҉G҉ 🇮 🇳 🇳 🇴 🇨 🇪 🇳 🇹 乂 𝘴ρꪖꪑ 乃ⓞ𝐓 sᴜᴅᴏ....__")
         target = ""
+        if HEROKU_APP_NAME is innocentspam:
+            app = "innocentspam"
+        else:
+            await ok.edit("`[HEROKU]:" "\nPlease Setup Your` **HEROKU_APP_NAME**")
+            return
+        heroku_var = app.config()
         if event is None:
             return
         try:
